@@ -1,0 +1,547 @@
+.body {
+  background: #101722;
+}
+
+/* Start - NavBar */
+
+.form-inline {
+  width: 60%;
+}
+
+.form-control {
+  width: 100% !important ;
+}
+
+.navbar-brand {
+  width: 25%;
+}
+
+.navbar-collapse {
+  width: 25%;
+}
+
+@media only screen and (max-width: 991px) {
+  .navbar-brand {
+    width: 10%;
+  }
+}
+
+#basic-navbar-nav {
+  justify-content: flex-end;
+  width: 25%;
+}
+
+.navEnd {
+  margin-right: 0px !important;
+}
+
+.userPicture {
+  height: 5vh;
+}
+
+@media only screen and (max-width: 991px) {
+  .nav-end-link {
+    padding-right: 0vw !important;
+    padding-left: 0vw !important;
+    margin: 0;
+  }
+
+  .profile {
+    display: none;
+  }
+
+  .profileText {
+    display: block;
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-end-link {
+    padding-right: 1vw !important;
+    padding-left: 1vw !important;
+    margin: auto;
+  }
+
+  .profileText {
+    display: none;
+  }
+}
+
+/* End - NavBar */
+
+/* Start - Loading Wheel */
+
+.loadingWheel {
+  position: fixed;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+}
+
+/* End - Loading Wheel */
+
+/* Start - Home Page */
+
+.homeText {
+  color: white;
+  font-size: 32px;
+  font-family: "Lato", sans-serif;
+}
+
+.topHeader {
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+
+.nav-pills .nav-link {
+  color: white;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #334b71 !important;
+}
+
+.noWatchList {
+  color: white;
+  text-align: center;
+  margin-top: 40%;
+  font-size: 46px;
+}
+
+
+
+/* End - Home Page */
+
+/* Start - Select Screen */
+
+.resultCard {
+  border: 0px !important;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9);
+  background: none !important;
+}
+
+.searchResultText {
+  text-align: center;
+  color: white;
+  padding: 5%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.searchResultImg {
+  min-height: 445px !important; /* Just change this to height - having a min and max is the same thing? */
+  max-height: 445px !important;
+  object-fit: cover;
+}
+
+.searchResultImg:hover {
+  transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transform: scale(1.02);
+}
+
+@media (min-width: 1200px) {
+  .searchResultImg {
+    min-height: 535px !important;
+    max-height: 535px !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .searchResultImg {
+    min-height: 817.5px !important;
+    max-height: 817.5px !important;
+  }
+}
+
+.realign {
+  display: inline-grid;
+}
+
+.noImage {
+  background-color: grey !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* End - Select Screen */
+
+/* Start - Expanaded Card Styles */
+
+/* Body */
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.expandContainer {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  min-width: 100%;
+}
+
+.expandCard {
+  position: fixed !important;
+  top: 5%;
+  bottom: 5%;
+  width: 80% !important;
+  margin: auto;
+  left: 10%;
+  max-height: 100vh;
+  overflow: scroll;
+  z-index: 2;
+  border: 0px !important;
+}
+
+.expandBackground {
+  position: fixed;
+  z-index: 1;
+  opacity: 0.8;
+  height: 100%;
+  width: 100%;
+  background: black;
+}
+
+.fade-enter {
+  opacity: 0;
+  z-index: 2;
+}
+
+.fade-enter-active {
+  z-index: 2;
+  opacity: 1;
+  transition: opacity 200ms;
+}
+
+.fadeBackground-enter {
+  opacity: 0;
+  z-index: 2;
+}
+.fadeBackground-enter-active {
+  z-index: 2;
+  opacity: 0.8;
+  transition: opacity 1000ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 1000ms;
+}
+
+.wrap {
+  max-width: 900px;
+  margin: 0 auto;
+} /* May not be used - check */
+
+/* Expand Card Nav Styles */
+.expandNav {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: white;
+}
+
+.expandNavButton {
+  margin: 0.5%;
+}
+
+.back {
+  z-index: -1;
+  width: 100% !important;
+}
+
+/* Exapand Header Styles */
+
+.cardBack {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  max-width: 100% !important;
+}
+
+.cardWrap {
+  background-image: linear-gradient(
+    to right,
+    rgba(14.12%, 14.51%, 16.86%, 1) 150px,
+    rgba(22.35%, 22.35%, 22.35%, 0.84) 100%
+  );
+}
+
+.cardHead {
+  width: 20% !important;
+  height: 50%;
+  margin-left: 5%;
+  margin-right: 5% !important;
+} /* might not be used anymore - check */
+
+.expandTitle {
+  background-color: #3d315b;
+  text-align: center;
+  padding: 2%;
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+  font-size: 200%;
+  font-weight: 300;
+}
+
+.expandHeaderMargin {
+  margin-left: 5% !important;
+  margin-right: 5% !important;
+  margin-top: 2% !important;
+  margin-bottom: 2% !important;
+}
+
+.expandHeaderPersInfo {
+  margin-bottom: 2% !important;
+  margin-top: 2% !important;
+}
+
+.expandHeaderTextCol {
+  max-height: 42vh;
+}
+
+.expandHeaderBio {
+  /* height:42vh;*/
+  /*height: 200px;*/
+  max-height: 30%;
+  overflow: hidden;
+}
+
+@media (max-height: 952px) and (max-width: 575px) {
+  .PersonIcon {
+    display: none;
+  }
+}
+
+.seeMoreButton {
+  margin-left: 5% !important;
+  margin-right: 5% !important;
+  text-decoration: underline;
+  color: cornflowerblue;
+}
+
+.seeMore {
+  max-height: 100% !important;
+}
+
+.viewLessButton {
+  text-decoration: underline;
+  color: cornflowerblue;
+}
+
+@media (min-width: 1500px) {
+  .expandHeaderBio {
+    max-height: 40%;
+  }
+}
+
+@media (min-width: 1830px) {
+  .expandHeaderBio {
+    max-height: 50%; /* was previously height might work better */
+  }
+}
+
+.expandHeaderImage {
+  margin: 5%;
+}
+
+@media (max-width: 576px) {
+  .expandHeaderImage {
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+    margin-top: 5% !important;
+    margin-bottom: 5% !important;
+  }
+}
+
+.externalLinks {
+  margin: auto !important;
+  justify-content: center;
+}
+
+.externalIcon {
+  background-color: #34495e;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  border: 0;
+  text-decoration: none;
+  color: white;
+  outline: none !important;
+}
+
+.externalIcon:hover {
+  background-color: #00b295;
+  transition: 0.5s cubic-bezier(0.38, 0.45, 0.63, 0.76);
+}
+
+.externalIconMargin {
+  margin: 2%;
+}
+
+.onWatchList {
+  background-color: #00b295;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  border: 0;
+  text-decoration: none;
+  color: white;
+  margin: 2%;
+  outline: none !important;
+}
+
+.onWatchList:hover {
+  background-color: #db5461;
+  transition: 0.5s cubic-bezier(0.38, 0.45, 0.63, 0.76);
+}
+
+.alert {
+  margin-bottom: 0px !important;
+  position: sticky !important;
+  top: 0;
+  z-index: 10;
+}
+
+/* View more Images and Videos Styles */
+
+.viewLessNav {
+  margin: auto !important;
+}
+
+.viewLessNavSpacing {
+  margin-right: auto;
+}
+
+@media (min-width: 576px) {
+  .posterCard {
+    column-count: 4 !important;
+  }
+}
+
+.viewMoreImages {
+  height: 500px;
+  object-fit: cover;
+}
+
+.viewMoreImages:hover {
+  transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transform: scale(1.02);
+}
+
+@media (max-width: 1400px) {
+  .viewMoreImages {
+    height: 400px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .viewMoreImages {
+    height: 300px;
+  }
+}
+
+@media (max-width: 800px) {
+  .viewMoreImages {
+    height: 250px;
+  }
+}
+
+@media (max-width: 575px) {
+  .viewMoreImages {
+    height: auto;
+  }
+}
+
+.videoCards {
+  column-count: 2 !important;
+}
+
+.expandImage {
+  position: fixed;
+  z-index: 20;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.enlargeImage {
+  z-index: 19;
+}
+
+.imageClose {
+  z-index: 20;
+  position: fixed;
+  text-decoration: underline;
+  color: cornflowerblue;
+}
+
+/* Cast and crew tables Styles */
+
+.table {
+  text-align: center;
+}
+
+.tablePicture {
+  width: 50%;
+}
+
+.tablePictureCol {
+  width: 30%;
+}
+
+.tableRow {
+  vertical-align: middle !important;
+}
+
+/* Movie / TV Info Styles */
+
+.infoHeader {
+  padding-bottom: 1%;
+  font-size: 130%;
+}
+
+/* Similar Movies / Shows Styles */
+
+.noResults {
+  text-align: center;
+  padding: 5%;
+}
+
+/* Person Credits Styles */
+
+.accordion {
+  margin: 0.5%;
+}
+
+.accordInActive {
+  background-color: white !important;
+}
+
+.accordActive {
+  background-color: #3d315b !important;
+  color: white;
+  transition: 1s cubic-bezier(0, 0.97, 0.55, 0.95);
+}
+
+.viewDetailsButton {
+  padding-top: 1%;
+  text-decoration: underline;
+  color: cornflowerblue;
+}
+
+/* End - Expanaded Card Styles */
