@@ -2,7 +2,7 @@
 
 BaileyDB is a React JS website with a Node JS back end, made by Sam Bailey to allow users to browse and create a watch list whilst using the TMDB API.
 
-![homePage](src/images/homePage.webp)
+![homePage](src/Images/homePage.webp)
 
 ## Built with:
 
